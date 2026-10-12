@@ -26,6 +26,40 @@
         overflow-x: hidden;
         width: 100%;
       }
+
+      /* ── Hamburger / X animado ── */
+      .hbg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        gap: 0;
+        position: relative;
+      }
+      .hbg span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--navy);
+        border-radius: 2px;
+        position: absolute;
+        transition: transform 0.3s ease, opacity 0.2s ease, top 0.3s ease;
+      }
+      .hbg span:nth-child(1) { top: 4px; }
+      .hbg span:nth-child(2) { top: 50%; margin-top: -1px; }
+      .hbg span:nth-child(3) { top: calc(100% - 6px); }
+      /* Estado "aberto" → X */
+      .hbg.open span:nth-child(1) { top: 50%; margin-top: -1px; transform: rotate(45deg); }
+      .hbg.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      .hbg.open span:nth-child(3) { top: 50%; margin-top: -1px; transform: rotate(-45deg); }
+
+      /* Overlay mobile */
+      #mo.visible { display: block; }
+      #mo.visible #mo-bg { opacity: 1; }
+      #mo.visible #mp { transform: translateX(0); }
+
       .ic {
         font-family: "Material Symbols Rounded";
         font-weight: normal;

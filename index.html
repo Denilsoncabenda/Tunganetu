@@ -52,23 +52,45 @@
         </nav>
         <div class="flex items-center gap-3">
           <a href="#contacto" class="btn b1 !py-2.5 hidden sm:inline-flex">Falar connosco</a>
+          <!-- Botão hamburger/X animado -->
           <button
             id="mb"
             type="button"
             class="xl:hidden w-11 h-11 grid place-items-center rounded-lg border border-line"
             aria-label="Abrir menu"
             aria-expanded="false">
-            <i class="ic text-2xl">menu</i>
+            <span class="hbg" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
           </button>
         </div>
       </div>
-      <div id="mp" class="hidden xl:hidden border-t border-line bg-white px-5 py-3 font-medium">
-        <a class="block py-3" href="#sobre">Sobre nós</a><a class="block py-3" href="#servicos">Serviços</a
-        ><a class="block py-3" href="#marca">Marca</a><a class="block py-3" href="#publico">Clientes</a
-        ><a class="block py-3" href="#projectos">Projectos</a><a class="block py-3" href="#equipa">Equipa</a
-        ><a class="block py-3" href="#faq">Dúvidas</a><a class="block py-3 text-brand font-bold" href="#contacto">Falar connosco</a>
-      </div>
     </header>
+
+    <!-- Overlay do menu mobile (fora do header para cobrir toda a página) -->
+    <div id="mo" class="fixed inset-0 z-40 hidden" aria-hidden="true">
+      <!-- Backdrop semitransparente -->
+      <div id="mo-bg" class="absolute inset-0 bg-navy/60 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
+      <!-- Painel lateral -->
+      <nav id="mp" class="absolute top-0 right-0 h-full w-72 max-w-[85vw] bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out" aria-label="Menu mobile">
+        <div class="flex items-center justify-between px-6 h-[72px] border-b border-line shrink-0">
+          <span class="font-display font-semibold text-xl tracking-tight">Menu</span>
+          <button id="mc" type="button" aria-label="Fechar menu" class="w-10 h-10 grid place-items-center rounded-lg border border-line">
+            <span class="hbg open" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+        </div>
+        <div class="flex-1 overflow-y-auto px-6 py-4 font-medium text-[15px]">
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#sobre">Sobre nós</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#servicos">Serviços</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#marca">Marca</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#publico">Clientes</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#projectos">Projectos</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#equipa">Equipa</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#faq">Dúvidas</a>
+          <a class="mt-6 btn b1 w-full justify-center" href="#contacto">Falar connosco</a>
+        </div>
+      </nav>
+    </div>
 
     <main id="conteudo">
       <!-- INÍCIO -->
@@ -217,7 +239,7 @@
       <!-- PROPÓSITO, MISSÃO E VISÃO -->
       <section id="proposito-missao-visao" class="sec">
         <div class="wrap">
-          <div class="max-w-2xl">
+          <div class="text-center max-w-2xl mx-auto">
             <h2 class="h2">Propósito, Missão e Visão</h2>
             <p class="m mt-4 text-lg leading-relaxed text-justify-pt">
               Os pilares estratégicos que orientam a nossa actuação, as nossas decisões e o nosso compromisso com o futuro.
@@ -526,18 +548,45 @@
           { passive: true }
         );
         var mb = document.getElementById("mb"),
-          mp = document.getElementById("mp");
-        mb.onclick = function () {
-          var o = mp.classList.toggle("hidden");
-          mb.setAttribute("aria-expanded", String(!o));
-          mb.firstChild.textContent = o ? "menu" : "close";
-        };
+          mo = document.getElementById("mo"),
+          moBg = document.getElementById("mo-bg"),
+          mp = document.getElementById("mp"),
+          mc = document.getElementById("mc"),
+          hbg = mb.querySelector(".hbg");
+
+        function openMenu() {
+          mo.classList.remove("hidden");
+          // pequeno delay para CSS transition funcionar
+          requestAnimationFrame(function() {
+            mo.classList.add("visible");
+          });
+          hbg.classList.add("open");
+          mb.setAttribute("aria-expanded", "true");
+          mo.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeMenu() {
+          mo.classList.remove("visible");
+          hbg.classList.remove("open");
+          mb.setAttribute("aria-expanded", "false");
+          mo.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+          // aguarda transição antes de esconder
+          setTimeout(function() { mo.classList.add("hidden"); }, 310);
+        }
+
+        mb.onclick = openMenu;
+        mc.onclick = closeMenu;
+        moBg.onclick = closeMenu;
         mp.onclick = function (e) {
-          if (e.target.tagName === "A") {
-            mp.classList.add("hidden");
-            mb.firstChild.textContent = "menu";
-          }
+          if (e.target.tagName === "A") closeMenu();
         };
+        // fechar com tecla Escape
+        document.addEventListener("keydown", function(e) {
+          if (e.key === "Escape" && !mo.classList.contains("hidden")) closeMenu();
+        });
+
         if (!reduce && "IntersectionObserver" in window) {
           var io = new IntersectionObserver(
             function (es) {
