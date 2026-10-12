@@ -1,0 +1,14 @@
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ficheiros de ambiente e credenciais
+.env
+.env.*
+*.log

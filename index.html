@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Tunganetu | Juntos, somos parte da transformação digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=block"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { navy: "var(--navy)", brand: "var(--blue)", tint: "var(--tint)", line: "var(--line)" },
+            fontFamily: { display: ["Outfit", "system-ui", "sans-serif"], sans: ['"DM Sans"', "system-ui", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans antialiased">
+    <a href="#conteudo" class="skip">Saltar para o conteúdo</a>
+
+    <!-- <div class="hidden md:block bg-tint border-b border-line text-sm">
+      <div class="wrap px-5 h-10 flex items-center justify-between m">
+        <span class="flex items-center gap-1.5"><i class="ic text-base text-brand">location_on</i>Luanda, Angola</span>
+        <span class="flex items-center gap-6"
+          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">mail</i>geral@tunganetu.ao</span
+          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">call</i>+244 900 000 000</span></span
+        >
+      </div>
+    </div>-->
+
+    <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-line" style="top: env(safe-area-inset-top, 0px)">
+      <div class="wrap px-5 h-[72px] flex items-center justify-between">
+        <a href="#inicio" class="flex items-center gap-3" aria-label="Tunganetu, início">
+          <img alt="Símbolo da Tunganetu" src="Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
+          <span class="font-display font-semibold text-2xl tracking-tight">Tunganetu</span>
+        </a>
+        <nav class="hidden xl:flex items-center gap-8 text-[15px] font-medium" aria-label="Principal">
+          <a class="nl" href="#sobre">Sobre nós</a><a class="nl" href="#servicos">Serviços</a><a class="nl" href="#marca">Marca</a
+          ><a class="nl" href="#publico">Clientes</a><a class="nl" href="#projectos">Projectos</a><a class="nl" href="#equipa">Equipa</a
+          ><a class="nl" href="#faq">Dúvidas</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#contacto" class="btn b1 !py-2.5 hidden sm:inline-flex">Falar connosco</a>
+          <button
+            id="mb"
+            type="button"
+            class="xl:hidden w-11 h-11 grid place-items-center rounded-lg border border-line"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            <i class="ic text-2xl">menu</i>
+          </button>
+        </div>
+      </div>
+      <div id="mp" class="hidden xl:hidden border-t border-line bg-white px-5 py-3 font-medium">
+        <a class="block py-3" href="#sobre">Sobre nós</a><a class="block py-3" href="#servicos">Serviços</a
+        ><a class="block py-3" href="#marca">Marca</a><a class="block py-3" href="#publico">Clientes</a
+        ><a class="block py-3" href="#projectos">Projectos</a><a class="block py-3" href="#equipa">Equipa</a
+        ><a class="block py-3" href="#faq">Dúvidas</a><a class="block py-3 text-brand font-bold" href="#contacto">Falar connosco</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- INÍCIO -->
+      <section id="inicio" class="sec !pt-12 md:!pt-20">
+        <div class="wrap grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
+          <div>
+            <h1 class="hl font-display font-semibold text-4xl sm:text-5xl lg:text-[3.6rem] leading-[1.05] tracking-tight">
+              Juntos, somos parte da transformação digital.
+            </h1>
+            <p class="hl m mt-6 text-lg leading-relaxed max-w-xl" style="animation-delay: 0.12s">
+              Criamos tecnologia, conhecimento e soluções que aproximam pessoas, fortalecem organizações e aceleram a transformação digital.
+            </p>
+            <div class="hl mt-9 flex flex-wrap gap-3" style="animation-delay: 0.24s">
+              <a href="#contacto" class="btn b1">Falar connosco<i class="ic">arrow_forward</i></a>
+              <a href="#sobre" class="btn b2">Conhecer a Tunganetu</a>
+            </div>
+            <p class="hl m mt-10 text-[15px] leading-relaxed max-w-md border-l-2 border-brand pl-4" style="animation-delay: 0.36s">
+              Para empresas privadas, instituições públicas, ONG, instituições de ensino, instituições financeiras e empreendedores.
+            </p>
+          </div>
+          <div class="flex items-center justify-center p-4 sm:p-8 bg-tint rounded-2xl border border-line">
+            <img
+              src="Tunganetu_2.png"
+              width="483"
+              height="300"
+              alt="Identidade visual Tunganetu"
+              class="hl w-full max-w-[483px] aspect-[483/300] object-contain rounded-lg shadow-sm"
+              style="animation-delay: 0.2s" />
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="sec !pt-4">
+        <div class="wrap grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div class="flex items-center justify-center p-6 sm:p-10 bg-tint rounded-2xl border border-line">
+            <img
+              alt="Símbolo de colaboração Tunganetu"
+              src="Tunganetu_4.png"
+              width="233"
+              height="175"
+              class="w-full max-w-[280px] aspect-[233/175] object-contain rounded-lg shadow-sm" />
+          </div>
+          <div>
+            <h2 class="h2">O que significa Tunganetu</h2>
+            <p class="m mt-5 text-lg leading-relaxed">
+              Tunganetu é uma palavra de origem kimbundu que significa um convite à colaboração e ao desenvolvimento conjunto: “conviva
+              connosco”, “construa connosco”, “cresça connosco” e “desenvolva connosco”. Representa a convicção de que as melhores soluções
+              surgem quando pessoas, empresas e comunidades trabalham lado a lado para construir um futuro melhor.
+            </p>
+            <ul class="mt-8 grid sm:grid-cols-2 border-t border-line">
+              <li class="py-4 border-b border-line sm:odd:pr-6"><b class="font-display text-xl font-semibold">Conviva connosco</b></li>
+              <li class="py-4 border-b border-line sm:odd:pr-6"><b class="font-display text-xl font-semibold">Construa connosco</b></li>
+              <li class="py-4 border-b border-line sm:odd:pr-6"><b class="font-display text-xl font-semibold">Cresça connosco</b></li>
+              <li class="py-4 border-b border-line sm:odd:pr-6"><b class="font-display text-xl font-semibold">Desenvolva connosco</b></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos" class="sec bg-tint">
+        <div class="wrap">
+          <div class="grid md:grid-cols-2 gap-6 md:gap-16 items-end">
+            <h2 class="h2">Serviços para organizações que querem avançar</h2>
+            <p class="m text-lg leading-relaxed">
+              Do diagnóstico ao suporte diário, cobrimos o que a sua organização precisa para trabalhar melhor com tecnologia.
+            </p>
+          </div>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line rounded-xl overflow-hidden">
+            <div class="svc">
+              <span class="ibox"><i class="ic">code</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Desenvolvimento de software</h3>
+              <p class="m mt-2 leading-relaxed">
+                Sistemas de gestão, plataformas internas e aplicações móveis feitas à medida do seu processo.
+              </p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">language</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Websites e lojas online</h3>
+              <p class="m mt-2 leading-relaxed">Páginas rápidas, claras no telemóvel e prontas para receber pedidos e pagamentos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">lan</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Redes e infraestrutura</h3>
+              <p class="m mt-2 leading-relaxed">Instalação, configuração e manutenção de redes, servidores e equipamentos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">cloud</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Cloud</h3>
+              <p class="m mt-2 leading-relaxed">Migração para a nuvem e cópias de segurança, com os seus dados sempre acessíveis.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">shield</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Cibersegurança</h3>
+              <p class="m mt-2 leading-relaxed">Protecção dos seus sistemas e dados contra falhas, perdas e acessos indevidos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">school</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Consultoria e formação</h3>
+              <p class="m mt-2 leading-relaxed">Planeamos consigo a transformação digital e preparamos as suas equipas para a usar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARCA -->
+      <section id="marca" class="sec">
+        <div class="wrap">
+          <h2 class="h2">Significado da marca</h2>
+          <p class="mt-4 font-display text-xl md:text-2xl font-medium max-w-2xl leading-snug">
+            Tunganetu não é apenas um nome; é uma filosofia.
+          </p>
+          <p class="m mt-8 text-lg">É o compromisso de:</p>
+          <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-5 border-t-2 border-navy">
+            <li class="py-6 lg:pr-6">
+              <p class="font-display font-semibold text-xl leading-snug">Crescer em conjunto com os clientes</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Construir relações de confiança</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Desenvolver soluções com impacto</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Promover a inovação colaborativa</p>
+            </li>
+            <li class="py-6 lg:pl-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Impulsionar a transformação digital</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- POSICIONAMENTO -->
+      <section class="sec bg-tint !py-14 md:!py-20">
+        <div class="wrap grid md:grid-cols-[1fr_2.2fr] gap-6 md:gap-16 items-start">
+          <h3 class="h2 !text-3xl">Posicionamento</h3>
+          <p class="font-display text-xl md:text-[1.6rem] font-medium leading-snug">
+            Na Tunganetu, acreditamos que o desenvolvimento é um caminho coletivo. Por isso, criamos tecnologia, conhecimento e soluções que
+            aproximam pessoas, fortalecem organizações e aceleram a transformação digital.
+          </p>
+        </div>
+      </section>
+
+      <!-- PÚBLICO-ALVO -->
+      <section id="publico" class="sec">
+        <div class="wrap grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-16 items-start">
+          <div>
+            <h2 class="h2">Público-alvo</h2>
+            <p class="m mt-5 text-lg leading-relaxed">
+              A Tunganetu tem como público-alvo empresas privadas, instituições públicas, organizações não governamentais (ONG),
+              instituições de ensino, instituições financeiras, profissionais liberais, micro, pequenas, médias e grandes empresas, bem como
+              empreendedores que procuram soluções tecnológicas para otimizar processos, aumentar a eficiência e acelerar a sua
+              transformação digital.
+            </p>
+          </div>
+          <ul class="grid sm:grid-cols-2 gap-x-8 font-medium">
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Empresas privadas
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Instituições públicas
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>ONG
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Instituições de ensino
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Instituições financeiras
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Profissionais liberais
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Micro e pequenas empresas
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Médias e grandes empresas
+            </li>
+            <li class="flex items-center gap-3 py-3.5 border-b border-line sm:col-span-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Empreendedores
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- PROJECTOS -->
+      <section id="projectos" class="sec bg-tint">
+        <div class="wrap">
+          <h2 class="h2">Projectos</h2>
+          <p class="m mt-4 text-lg max-w-xl">Exemplos do tipo de trabalho que fazemos. Substitua pelos projectos reais.</p>
+          <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <article>
+              <div class="ph"><img alt="Sistema de gestão" class="w-full aspect-[16/10]" /></div>
+              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
+              <p class="m mt-2 leading-relaxed">Plataforma para controlar vendas, stock e facturação de uma rede de lojas.</p>
+            </article>
+            <article>
+              <div class="ph bg-white border border-line p-4 sm:p-6">
+                <img
+                  alt="Aplicação móvel Faturaja"
+                  src="4.png"
+                  width="500"
+                  height="500"
+                  class="w-full max-h-48 object-contain aspect-square" />
+              </div>
+              <p class="mt-5 text-sm font-bold text-brand">Software de gestao</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
+              <p class="m mt-2 leading-relaxed">
+                Plataforma para ajudar empresas a gerir a sua atividade comercial, emitir documentos fiscais, controlar vendas, acompanhar o
+                stock e organizar informações financeiras.
+              </p>
+            </article>
+            <article>
+              <div class="ph"><img alt="Rede e segurança" class="w-full aspect-[16/10]" /></div>
+              <p class="mt-5 text-sm font-bold text-brand">Infraestrutura</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Rede e segurança</h3>
+              <p class="m mt-2 leading-relaxed">Rede interna e cópias de segurança para um escritório com várias filiais.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPA -->
+      <section id="equipa" class="sec">
+        <div class="wrap">
+          <div class="flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <h2 class="h2">Quem está por trás</h2>
+              <p class="m mt-4 text-lg max-w-xl">
+                Pessoas que gostam de resolver problemas com tecnologia. Substitua pelos nomes e fotografias reais.
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <button
+                id="prev"
+                type="button"
+                aria-label="Anterior"
+                class="w-12 h-12 rounded-lg border-2 border-navy grid place-items-center hover:bg-navy hover:text-white transition-colors">
+                <i class="ic text-2xl">chevron_left</i>
+              </button>
+              <button
+                id="next"
+                type="button"
+                aria-label="Seguinte"
+                class="w-12 h-12 rounded-lg border-2 border-navy grid place-items-center hover:bg-navy hover:text-white transition-colors">
+                <i class="ic text-2xl">chevron_right</i>
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              id="track"
+              tabindex="0"
+              role="region"
+              aria-label="Equipa"
+              class="mt-10 flex gap-5 overflow-x-auto snap-x snap-mandatory no-scrollbar">
+              <div>
+                <img alt="Fotografia do director geral" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Director geral</p>
+              </div>
+              <div>
+                <img alt="Fotografia do responsável de desenvolvimento" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Desenvolvimento</p>
+              </div>
+              <div>
+                <img alt="Fotografia do responsável de infraestrutura" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Infraestrutura e redes</p>
+              </div>
+              <div>
+                <img alt="Fotografia do apoio ao cliente" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Apoio ao cliente</p>
+              </div>
+              <div>
+                <img alt="Fotografia do designer" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Design e interface</p>
+              </div>
+              <div>
+                <img alt="Fotografia do consultor" class="w-full aspect-[4/5] object-cover" />
+                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
+                <p class="m text-sm">Consultoria e formação</p>
+              </div>
+            </div>
+          </div>
+          <div id="dots" class="mt-6 flex items-center gap-2" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- DÚVIDAS -->
+      <section id="faq" class="sec bg-tint">
+        <div class="wrap grid lg:grid-cols-[1fr_1.6fr] gap-10 lg:gap-16">
+          <h2 class="h2">Perguntas frequentes</h2>
+          <div class="divide-y divide-line border-y border-line bg-tint">
+            <details class="py-5">
+              <summary class="cursor-pointer list-none flex justify-between gap-4 font-display font-semibold text-lg">
+                Quanto custa um projecto?<i class="ic text-brand text-2xl">add</i>
+              </summary>
+              <p class="m mt-3 leading-relaxed">
+                Depende do que precisa. Depois de uma conversa inicial gratuita, enviamos uma proposta com preço e prazos claros.
+              </p>
+            </details>
+            <details class="py-5">
+              <summary class="cursor-pointer list-none flex justify-between gap-4 font-display font-semibold text-lg">
+                Quanto tempo demora?<i class="ic text-brand text-2xl">add</i>
+              </summary>
+              <p class="m mt-3 leading-relaxed">
+                Um website simples pode ficar pronto em poucas semanas. Sistemas maiores são entregues por etapas, para ver resultados cedo.
+              </p>
+            </details>
+            <details class="py-5">
+              <summary class="cursor-pointer list-none flex justify-between gap-4 font-display font-semibold text-lg">
+                Trabalham fora de Luanda?<i class="ic text-brand text-2xl">add</i>
+              </summary>
+              <p class="m mt-3 leading-relaxed">
+                Sim. Trabalhamos à distância com clientes de todo o país e deslocamo-nos quando o projecto o exige.
+              </p>
+            </details>
+            <details class="py-5">
+              <summary class="cursor-pointer list-none flex justify-between gap-4 font-display font-semibold text-lg">
+                Há suporte depois da entrega?<i class="ic text-brand text-2xl">add</i>
+              </summary>
+              <p class="m mt-3 leading-relaxed">
+                Sim. Oferecemos acompanhamento e manutenção, para que a solução continue a funcionar e a evoluir.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="sec">
+        <div class="wrap grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <h2 class="h2">Vamos começar o seu projecto?</h2>
+            <p class="m mt-5 text-lg leading-relaxed max-w-md">
+              Conte-nos o que precisa. Respondemos com uma proposta clara, sem compromisso.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="mailto:geral@tunganetu.ao" class="btn b1"><i class="ic">mail</i>Enviar email</a>
+              <a href="https://wa.me/244900000000" class="btn b2"><i class="ic">chat</i>WhatsApp</a>
+            </div>
+          </div>
+          <ul class="divide-y divide-line border-y border-line font-medium">
+            <li class="flex items-center gap-4 py-5">
+              <span class="ibox"><i class="ic">location_on</i></span
+              >Luanda, Angola
+            </li>
+            <li class="flex items-center gap-4 py-5">
+              <span class="ibox"><i class="ic">mail</i></span
+              >geral@tunganetu.ao
+            </li>
+            <li class="flex items-center gap-4 py-5">
+              <span class="ibox"><i class="ic">call</i></span
+              >+244 900 000 000
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-tint border-t border-line">
+      <div class="wrap px-5 pt-14 pb-8">
+        <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-10">
+          <div>
+            <span class="font-display font-semibold text-2xl">tunganetu</span>
+            <p class="m mt-3 max-w-xs leading-relaxed">Juntos, somos parte da transformação digital.</p>
+          </div>
+          <nav aria-label="Rodapé">
+            <h3 class="font-display font-semibold">Navegação</h3>
+            <ul class="mt-4 space-y-2.5 m">
+              <li><a class="hover:text-brand" href="#sobre">Sobre nós</a></li>
+              <li><a class="hover:text-brand" href="#servicos">Serviços</a></li>
+              <li><a class="hover:text-brand" href="#publico">Clientes</a></li>
+              <li><a class="hover:text-brand" href="#projectos">Projectos</a></li>
+              <li><a class="hover:text-brand" href="#faq">Perguntas frequentes</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h3 class="font-display font-semibold">Contacto</h3>
+            <ul class="mt-4 space-y-2.5 m">
+              <li>Luanda, Angola</li>
+              <li><a class="hover:text-brand" href="mailto:geral@tunganetu.ao">geral@tunganetu.ao</a></li>
+              <li>+244 900 000 000</li>
+            </ul>
+          </div>
+        </div>
+        <p class="m text-sm mt-12 pt-6 border-t border-line">© 2026 Tunganetu. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches,
+          hd = document.querySelector("header");
+        addEventListener(
+          "scroll",
+          function () {
+            hd.classList.toggle("sc", document.documentElement.scrollTop > 8);
+          },
+          { passive: true }
+        );
+        var mb = document.getElementById("mb"),
+          mp = document.getElementById("mp");
+        mb.onclick = function () {
+          var o = mp.classList.toggle("hidden");
+          mb.setAttribute("aria-expanded", String(!o));
+          mb.firstChild.textContent = o ? "menu" : "close";
+        };
+        mp.onclick = function (e) {
+          if (e.target.tagName === "A") {
+            mp.classList.add("hidden");
+            mb.firstChild.textContent = "menu";
+          }
+        };
+        if (!reduce && "IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  var el = e.target;
+                  el.classList.add("in");
+                  io.unobserve(el);
+                  setTimeout(function () {
+                    el.classList.remove("rv", "in");
+                    el.style.transitionDelay = "";
+                  }, 1500);
+                }
+              });
+            },
+            { threshold: 0.12 }
+          );
+          document.querySelectorAll("main h2,#sobre img,.svc,article,#track").forEach(function (el) {
+            var i = [].indexOf.call(el.parentNode.children, el);
+            el.style.transitionDelay = Math.min(i, 5) * 80 + "ms";
+            el.classList.add("rv");
+            io.observe(el);
+          });
+        }
+        var tr = document.getElementById("track"),
+          cards = [].slice.call(tr.children),
+          dots = document.getElementById("dots"),
+          timer;
+        cards.forEach(function (c, i) {
+          var b = document.createElement("button");
+          b.type = "button";
+          b.onclick = function () {
+            go(i);
+          };
+          dots.appendChild(b);
+        });
+        function step() {
+          return cards[0].offsetWidth + (parseFloat(getComputedStyle(tr).columnGap) || 20);
+        }
+        function idx() {
+          return Math.round(tr.scrollLeft / step());
+        }
+        function atEnd() {
+          return tr.scrollLeft + tr.clientWidth >= tr.scrollWidth - 4;
+        }
+        function go(i) {
+          tr.scrollTo({ left: i * step(), behavior: reduce ? "auto" : "smooth" });
+        }
+        function paint() {
+          var i = atEnd() ? cards.length - 1 : idx();
+          [].forEach.call(dots.children, function (d, k) {
+            d.className = "h-2 rounded-full transition-all " + (k === i ? "w-8 bg-brand" : "w-2 bg-line");
+          });
+        }
+        function next() {
+          atEnd() ? go(0) : go(idx() + 1);
+        }
+        function prev() {
+          idx() <= 0 ? go(cards.length - 1) : go(idx() - 1);
+        }
+        tr.addEventListener("scroll", paint, { passive: true });
+        paint();
+        addEventListener("resize", paint);
+        document.getElementById("next").onclick = next;
+        document.getElementById("prev").onclick = prev;
+      })();
+    </script>
+  </body>
+</html>
