@@ -39,7 +39,7 @@
       </div>
     </div>-->
 
-    <header class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-line" style="top: env(safe-area-inset-top, 0px)">
+    <header id="hd" class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-line transition-shadow duration-300">
       <div class="wrap px-5 h-[72px] flex items-center justify-between">
         <a href="#inicio" class="flex items-center gap-3" aria-label="Tunganetu, início">
           <img alt="Símbolo da Tunganetu" src="Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
@@ -331,15 +331,45 @@
         <div class="wrap">
           <h2 class="h2">Projectos</h2>
           <p class="m mt-4 text-lg max-w-xl">Exemplos do tipo de trabalho que fazemos. Substitua pelos projectos reais.</p>
-          <div class="mt-12 grid md:grid-cols-3 gap-8">
-            <article>
+          <div class="mt-12 grid md:grid-cols-3 gap-8 items-start">
+
+            <!-- Projecto 1: Sistema de gestão Escolar -->
+            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
               <div class="ph"><img alt="Sistema de gestão" class="w-full aspect-[16/10]" /></div>
-              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
-              <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
-              <p class="m mt-2 leading-relaxed">Plataforma para controlar vendas, stock e facturação de uma rede de lojas.</p>
+              <div class="p-5 flex flex-col flex-1">
+                <p class="text-sm font-bold text-brand">Software de gestão</p>
+                <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
+                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">Plataforma para controlar matrículas, notas, frequência e facturação de uma instituição de ensino.</p>
+                <!-- Dropdown -->
+                <div class="mt-4 pt-4 border-t border-line">
+                  <button
+                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
+                    aria-expanded="false"
+                    aria-controls="proj1-details">
+                    <span>Parceiros e clientes</span>
+                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
+                  </button>
+                  <div id="proj1-details" class="proj-details hidden mt-4 space-y-4">
+                    <div>
+                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>A definir — adicione o nome real da instituição aqui</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold text-muted uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>A definir — adicione os parceiros reais aqui</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
-            <article>
-              <div class="ph bg-white border border-line p-4 sm:p-6">
+
+            <!-- Projecto 2: Faturaja -->
+            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
+              <div class="ph bg-white border-b border-line p-4 sm:p-6">
                 <img
                   alt="Aplicação móvel Faturaja"
                   src="4.png"
@@ -347,19 +377,74 @@
                   height="500"
                   class="w-full max-h-48 object-contain aspect-square" />
               </div>
-              <p class="mt-5 text-sm font-bold text-brand">Software de gestao</p>
-              <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
-              <p class="m mt-2 leading-relaxed text-justify-pt">
-                Plataforma para ajudar empresas a gerir a sua atividade comercial, emitir documentos fiscais, controlar vendas, acompanhar o
-                stock e organizar informações financeiras.
-              </p>
+              <div class="p-5 flex flex-col flex-1">
+                <p class="text-sm font-bold text-brand">Software de gestão</p>
+                <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
+                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
+                  Plataforma para ajudar empresas a gerir a sua actividade comercial, emitir documentos fiscais, controlar vendas, acompanhar o stock e organizar informações financeiras.
+                </p>
+                <!-- Dropdown -->
+                <div class="mt-4 pt-4 border-t border-line">
+                  <button
+                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
+                    aria-expanded="false"
+                    aria-controls="proj2-details">
+                    <span>Parceiros e clientes</span>
+                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
+                  </button>
+                  <div id="proj2-details" class="proj-details hidden mt-4 space-y-4">
+                    <div>
+                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Pequenas e médias empresas angolanas</li>
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Comerciantes e profissionais liberais</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>Tunganetu (desenvolvimento e suporte)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
-            <article>
+
+            <!-- Projecto 3: Rede e segurança -->
+            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
               <div class="ph"><img alt="Rede e segurança" class="w-full aspect-[16/10]" /></div>
-              <p class="mt-5 text-sm font-bold text-brand">Infraestrutura</p>
-              <h3 class="font-display font-semibold text-xl mt-1">Rede e segurança</h3>
-              <p class="m mt-2 leading-relaxed">Rede interna e cópias de segurança para um escritório com várias filiais.</p>
+              <div class="p-5 flex flex-col flex-1">
+                <p class="text-sm font-bold text-brand">Infraestrutura</p>
+                <h3 class="font-display font-semibold text-xl mt-1">Rede e segurança</h3>
+                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">Rede interna, cópias de segurança e protecção de dados para um escritório com várias filiais.</p>
+                <!-- Dropdown -->
+                <div class="mt-4 pt-4 border-t border-line">
+                  <button
+                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
+                    aria-expanded="false"
+                    aria-controls="proj3-details">
+                    <span>Parceiros e clientes</span>
+                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
+                  </button>
+                  <div id="proj3-details" class="proj-details hidden mt-4 space-y-4">
+                    <div>
+                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>A definir — adicione o nome real da organização aqui</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
+                      <ul class="space-y-1">
+                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>A definir — adicione os parceiros reais aqui</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
+
           </div>
         </div>
       </section>
@@ -538,15 +623,7 @@
 
     <script>
       (function () {
-        var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches,
-          hd = document.querySelector("header");
-        addEventListener(
-          "scroll",
-          function () {
-            hd.classList.toggle("sc", document.documentElement.scrollTop > 8);
-          },
-          { passive: true }
-        );
+        var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
         var mb = document.getElementById("mb"),
           mo = document.getElementById("mo"),
           moBg = document.getElementById("mo-bg"),
@@ -652,6 +729,35 @@
         addEventListener("resize", paint);
         document.getElementById("next").onclick = next;
         document.getElementById("prev").onclick = prev;
+
+        // ── Dropdowns de projectos ──
+        document.querySelectorAll(".proj-toggle").forEach(function(btn) {
+          btn.addEventListener("click", function() {
+            var targetId = btn.getAttribute("aria-controls");
+            var details = document.getElementById(targetId);
+            var chevron = btn.querySelector(".proj-chevron");
+            var isOpen = btn.getAttribute("aria-expanded") === "true";
+            if (isOpen) {
+              btn.setAttribute("aria-expanded", "false");
+              chevron.style.transform = "rotate(0deg)";
+              details.classList.add("hidden");
+            } else {
+              btn.setAttribute("aria-expanded", "true");
+              chevron.style.transform = "rotate(180deg)";
+              details.classList.remove("hidden");
+            }
+          });
+          // suporte a teclado: Enter e Espaço
+          btn.addEventListener("keydown", function(e) {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); btn.click(); }
+          });
+        });
+
+        // ── Sombra do header ao fazer scroll ──
+        var hdEl = document.getElementById("hd");
+        addEventListener("scroll", function() {
+          hdEl.classList.toggle("hd-scroll", window.scrollY > 8);
+        }, { passive: true });
       })();
     </script>
   </body>

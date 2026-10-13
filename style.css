@@ -60,6 +60,42 @@
       #mo.visible #mo-bg { opacity: 1; }
       #mo.visible #mp { transform: translateX(0); }
 
+      /* ── Header fixo: safe-area e sombra ao scroll ── */
+      #hd {
+        top: env(safe-area-inset-top, 0px);
+      }
+      #hd.hd-scroll {
+        box-shadow: 0 4px 24px 0 rgba(10, 10, 92, 0.08);
+        background: rgba(255,255,255,0.98);
+      }
+
+      /* ── Cards de projecto ── */
+      .proj-card {
+        transition: box-shadow 0.25s, transform 0.25s;
+      }
+      .proj-card:hover {
+        box-shadow: 0 8px 32px 0 rgba(10,10,92,0.10);
+        transform: translateY(-3px);
+      }
+      .proj-toggle {
+        cursor: pointer;
+        border-radius: 0.4rem;
+        padding: 0.25rem 0;
+        transition: color 0.2s;
+      }
+      .proj-toggle:hover { color: var(--blue); }
+      .proj-toggle:focus-visible {
+        outline: 2px solid var(--blue);
+        outline-offset: 3px;
+      }
+      .proj-details {
+        animation: proj-open 0.25s ease;
+      }
+      @keyframes proj-open {
+        from { opacity: 0; transform: translateY(-6px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
       .ic {
         font-family: "Material Symbols Rounded";
         font-weight: normal;
