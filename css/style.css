@@ -345,23 +345,18 @@
           width: 100%;
           justify-content: center;
         }
-        #track > div {
-          flex: 0 0 85%;
-        }
-      }
-
       #track > div {
-        flex: 0 0 78%;
+        flex: 0 0 85%;
         scroll-snap-align: start;
       }
       @media (min-width: 640px) {
         #track > div {
-          flex-basis: calc((100% - 1.25rem) / 2);
+          flex: 0 0 calc((100% - 1.25rem) / 2);
         }
       }
       @media (min-width: 1024px) {
         #track > div {
-          flex-basis: calc((100% - 3.75rem) / 4);
+          flex: 0 0 calc((100% - 3.75rem) / 4);
         }
       }
       details[open] summary .ic {

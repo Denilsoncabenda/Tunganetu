@@ -42,15 +42,6 @@
   <body class="font-sans antialiased">
     <a href="#conteudo" class="skip">Saltar para o conteúdo</a>
 
-    <!-- <div class="hidden md:block bg-tint border-b border-line text-sm">
-      <div class="wrap px-5 h-10 flex items-center justify-between m">
-        <span class="flex items-center gap-1.5"><i class="ic text-base text-brand">location_on</i>Luanda, Angola</span>
-        <span class="flex items-center gap-6"
-          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">mail</i>geral@tunganetu.ao</span
-          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">call</i>+244 900 000 000</span></span
-        >
-      </div>
-    </div>-->
 
     <header id="hd" class="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-line transition-shadow duration-300">
       <div class="wrap px-5 h-[72px] flex items-center justify-between">
@@ -492,31 +483,8 @@
                 <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
-              <!-- Cliente 5 -->
-              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
-                <div class="logo-box">
-                  <img
-                    src="assets/images/clientes/cliente-5.png"
-                    alt="Empresas Privadas"
-                    class="logo-img"
-                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
-                  <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
-                </div>
-                <p class="text-sm font-semibold text-navy mt-4">...</p>
-              </div>
 
-              <!-- Cliente 6 -->
-              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
-                <div class="logo-box">
-                  <img
-                    src="assets/images/clientes/cliente-6.png"
-                    alt="Serviços Financeiros"
-                    class="logo-img"
-                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
-                  <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
-                </div>
-                <p class="text-sm font-semibold text-navy mt-4">... </p>
-              </div>
+
 
             </div>
           </div>
@@ -932,8 +900,7 @@
         }
         var tr = document.getElementById("track"),
           cards = [].slice.call(tr.children),
-          dots = document.getElementById("dots"),
-          timer;
+          dots = document.getElementById("dots");
         cards.forEach(function (c, i) {
           var b = document.createElement("button");
           b.type = "button";
