@@ -12,20 +12,20 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=block"
       rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="Tunganetu_4.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/Tunganetu_4.png" />
     <meta name="description" content="Tunganetu - Consultoria e soluções tecnológicas em Angola. Desenvolvimento de software, infraestrutura de redes, cloud, cibersegurança e transformação digital sustentável." />
     <!-- Open Graph / Partilha em Redes Sociais e WhatsApp -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tunganetu | Juntos, somos parte da transformação digital" />
     <meta property="og:description" content="Criamos tecnologia, conhecimento e soluções que aproximam pessoas, fortalecem organizações e aceleram a transformação digital em Angola." />
-    <meta property="og:image" content="Tunganetu_1.png" />
+    <meta property="og:image" content="images/Tunganetu_1.png" />
     <meta property="og:locale" content="pt_AO" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tunganetu | Transformação Digital" />
     <meta name="twitter:description" content="Tecnologia e inovação para empresas e instituições em Angola." />
-    <meta name="twitter:image" content="Tunganetu_1.png" />
+    <meta name="twitter:image" content="images/Tunganetu_1.png" />
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script>
       tailwind.config = {
@@ -55,14 +55,14 @@
     <header id="hd" class="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-line transition-shadow duration-300">
       <div class="wrap px-5 h-[72px] flex items-center justify-between">
         <a href="#inicio" class="flex items-center gap-3" aria-label="Tunganetu, início">
-          <img alt="Símbolo da Tunganetu" src="Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
+          <img alt="Símbolo da Tunganetu" src="images/Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
           <span class="font-display font-semibold text-2xl tracking-tight">Tunganetu</span>
         </a>
         <nav class="hidden xl:flex items-center gap-7 text-[15px] font-medium" aria-label="Principal">
           <a class="nl" href="#sobre">Sobre nós</a>
           <a class="nl" href="#proposito-missao-visao">Missão & Visão</a>
           <a class="nl" href="#servicos">Serviços</a>
-          <a class="nl" href="#publico">Público-alvo</a>
+ 
           <a class="nl" href="#projectos">Projectos</a>
           <a class="nl" href="#parceiros">Clientes & Parceiros</a>
           <a class="nl" href="#equipa">Equipa</a>
@@ -130,7 +130,7 @@
           </div>
           <div class="flex items-center justify-center p-4 sm:p-8 bg-tint rounded-2xl border border-line">
             <img
-              src="Tunganetu_2.png"
+              src="images/Tunganetu_2.png"
               width="483"
               height="300"
               alt="Identidade visual Tunganetu"
@@ -146,7 +146,7 @@
           <div class="flex items-center justify-center p-6 sm:p-10 bg-tint rounded-2xl border border-line">
             <img
               alt="Símbolo de colaboração Tunganetu"
-              src="Tunganetu_4.png"
+              src="images/Tunganetu_4.png"
               width="233"
               height="175"
               class="w-full max-w-[280px] aspect-[233/175] object-contain rounded-lg shadow-sm" />
@@ -172,8 +172,8 @@
       <section id="proposito-missao-visao" class="sec">
         <div class="wrap">
           <div class="text-center max-w-2xl mx-auto">
-            <h2 class="h2">Propósito, Missão e Visão</h2>
-            <p class="m mt-4 text-lg leading-relaxed text-justify-pt">
+            
+            <p class="m mt-4 text-lg leading-relaxed text-center-pt">
               Os pilares estratégicos que orientam a nossa actuação, as nossas decisões e o nosso compromisso com o futuro.
             </p>
           </div>
@@ -246,7 +246,7 @@
       <section class="sec bg-tint !py-14 md:!py-20">
         <div class="wrap grid md:grid-cols-[1fr_2.2fr] gap-6 md:gap-16 items-start">
           <h2 class="h2 !text-3xl">Posicionamento</h2>
-          <p class="font-display text-xl md:text-[1.6rem] font-medium leading-snug text-justify-pt">
+          <p class="font-display text-xl font-medium text-justify-pt">
             Acreditamos que o avanço tecnológico em Angola se constrói com colaboração, proximidade e rigor técnico. Desenvolvemos soluções adaptadas à realidade de cada cliente, garantindo eficiência, sustentabilidade e inovação prática.
           </p>
         </div>
@@ -345,10 +345,12 @@
       <!-- PROJECTOS -->
       <section id="projectos" class="sec bg-tint">
         <div class="wrap">
+
           <h2 class="h2">Projectos</h2>
-          <p class="m mt-4 text-lg max-w-xl text-justify-pt">
+          <p class="m mt-4 text-lg max-w-xl text-center-pt">
             Soluções e produtos tecnológicos desenvolvidos pela Tunganetu para responder a desafios reais de gestão, eficiência e modernização.
           </p>
+
           <div class="mt-12 grid md:grid-cols-3 gap-8">
             <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
               <div class="ph rounded-xl overflow-hidden bg-tint border border-line flex items-center justify-center aspect-[16/10] p-6">
@@ -360,8 +362,8 @@
                   <span class="text-xs text-muted mt-0.5" style="color:var(--muted)">Gestão Académica & Facturação</span>
                 </div>
               </div>
-              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
-              <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
+              <p class="mt-5 text-sm font-bold text-brand">PGE</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Plataforma de gestão Escolar</h3>
               <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
                 Plataforma integrada para controlo de matrículas, gestão de notas, assiduidade, turmas e facturação para instituições de ensino.
               </p>
@@ -370,20 +372,20 @@
               <div class="ph bg-white border border-line p-4 sm:p-6 rounded-xl overflow-hidden flex items-center justify-center">
                 <img
                   alt="Aplicação móvel Faturaja"
-                  src="4.png"
+                  src="images/4.png"
                   width="500"
                   height="500"
                   class="w-full max-h-48 object-contain aspect-square" />
               </div>
-              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
+              <p class="mt-5 text-sm font-bold text-brand">Faturaja</p>
               <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
               <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
                 Plataforma para ajudar empresas a gerir a sua actividade comercial, emitir documentos fiscais certificados, controlar vendas, acompanhar o stock e organizar informações financeiras.
               </p>
             </article>
             <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
-              <div class="ph bg-white border border-line p-4 rounded-xl overflow-hidden flex items-center justify-center">
-                <img alt="SDOCA - Gestão Documental" src="SDOCA.png" width="794" height="314" class="w-full max-h-48 object-contain" />
+              <div class="ph bg-white border  border-line p-4 rounded-xl overflow-hidden flex items-center justify-center">
+                <img alt="SDOCA - Gestão Documental" src="images/SDOCA.png" width="794" height="314" class="w-full max-h-48 object-contain" />
               </div>
               <p class="mt-5 text-sm font-bold text-brand">Gestão Documental</p>
               <h3 class="font-display font-semibold text-xl mt-1">SDOCA</h3>
@@ -442,39 +444,39 @@
               <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
                 <div class="logo-box">
                   <img
-                    src="SDOCA.png"
+                    src="images/logo_jpg.jpg"
                     alt="SDOCA Comércio & Serviços"
                     class="logo-img"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">SDOCA Comércio & Serviços</p>
+                <p class="text-sm font-semibold text-navy mt-4">Instituto Tecnico Comercial de Luanda</p>
               </div>
 
               <!-- Cliente 2: Mwamba Comercial -->
               <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
                 <div class="logo-box">
                   <img
-                    src="mwamba3.jpeg"
+                    src="images/mwamba3.jpeg"
                     alt="Mwamba Comercial"
                     class="logo-img"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Mwamba Comercial</p>
+                <p class="text-sm font-semibold text-navy mt-4">MWAMBA-COMERCIAL, COMERCIO A RETALHO</p>
               </div>
 
               <!-- Cliente 3: Pingo d'Água -->
               <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
                 <div class="logo-box">
                   <img
-                    src="pingodagua.png"
+                    src="images/pingodagua.png"
                     alt="Pingo d'Água"
                     class="logo-img"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Pingo d'Água</p>
+                <p class="text-sm font-semibold text-navy mt-4">CONTAI - SERVIÇOS & MANUTENÇÃO</p>
               </div>
 
               <!-- Cliente 4 -->
@@ -487,7 +489,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Instituições Públicas</p>
+                <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
               <!-- Cliente 5 -->
@@ -500,7 +502,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Empresas Privadas</p>
+                <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
               <!-- Cliente 6 -->
@@ -513,7 +515,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Serviços Financeiros</p>
+                <p class="text-sm font-semibold text-navy mt-4">... </p>
               </div>
 
             </div>
@@ -524,7 +526,7 @@
             <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
               <div>
                 <span class="text-xs font-bold uppercase tracking-wider text-muted" style="color:var(--muted)">Ecossistema & Cooperação</span>
-                <h3 class="font-display font-semibold text-2xl mt-0.5">Parceiros Estratégicos</h3>
+                <h3 class="font-display font-semibold text-2xl mt-0.5">Parceiros </h3>
               </div>
               <div class="flex items-center gap-2">
                 <button
@@ -556,13 +558,13 @@
               <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col items-center justify-center text-center shrink-0">
                 <div class="logo-box">
                   <img
-                    src="assets/images/parceiros/parceiro-1.png"
+                    src="images/logo_jpg.jpg"
                     alt="Fornecedores Cloud"
                     class="logo-img"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Fornecedores Cloud</p>
+                <p class="text-sm font-semibold text-navy mt-4">Instituto Tecnico Comercial de Luanda</p>
               </div>
 
               <!-- Parceiro 2 -->
@@ -575,7 +577,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Especialistas em Cibersegurança</p>
+                <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
               <!-- Parceiro 3 -->
@@ -588,7 +590,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Parceiros Fiscais & AGT</p>
+                <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
               <!-- Parceiro 4 -->
@@ -601,7 +603,7 @@
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <span class="logo-placeholder-text hidden">Adicionar logótipo</span>
                 </div>
-                <p class="text-sm font-semibold text-navy mt-4">Operadores de Rede</p>
+                <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
             </div>
@@ -648,87 +650,115 @@
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-1.jpg"
-                    alt="Direcção Geral"
+                    alt="Eng. Joaquim Marcial Mbango"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">DG</span>
+                    <span class="team-initials">JM</span>
                     <span class="team-badge">Direcção</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Direcção Geral</h3>
+                <h3 class="font-display font-semibold text-lg mt-4">Eng. Joaquim Marcial Mbango</h3>
                 <p class="m text-sm">Gestão executiva e estratégica</p>
               </div>
               <div>
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-2.jpg"
-                    alt="Engenharia de Software"
+                    alt="Stelvio de Jesus Arsenio Marques"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">DEV</span>
-                    <span class="team-badge">Software</span>
+                    <span class="team-initials">SM</span>
+                    <span class="team-badge">Full-Stack</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Engenharia de Software</h3>
-                <p class="m text-sm">Desenvolvimento e arquitetura</p>
+                <h3 class="font-display font-semibold text-lg mt-4">Stelvio de Jesus Arsenio Marques</h3>
+                <p class="m text-sm">Desenvolvedor Full-Stack</p>
               </div>
               <div>
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-3.jpg"
-                    alt="Redes & Infraestrutura"
+                    alt="Paulina Fernando Capitão"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">INF</span>
-                    <span class="team-badge">Sistemas</span>
+                    <span class="team-initials">PC</span>
+                    <span class="team-badge">Full-Stack</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Redes & Infraestrutura</h3>
-                <p class="m text-sm">Servidores, segurança e cloud</p>
+                <h3 class="font-display font-semibold text-lg mt-4">Paulina Fernando Capitão</h3>
+                <p class="m text-sm">Desenvolvedora Full-Stack</p>
               </div>
               <div>
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-4.jpg"
-                    alt="Apoio ao Cliente"
+                    alt="Isidro Manuel"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">SUP</span>
-                    <span class="team-badge">Suporte</span>
+                    <span class="team-initials">IM</span>
+                    <span class="team-badge">Back-End</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Apoio ao Cliente</h3>
-                <p class="m text-sm">Atendimento técnico e manutenção</p>
+                <h3 class="font-display font-semibold text-lg mt-4">Isidro Manuel</h3>
+                <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
               <div>
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-5.jpg"
-                    alt="Design & Experiência"
+                    alt="Joaquim dos Santos de Almeida Chiaca"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">UI</span>
-                    <span class="team-badge">Design</span>
+                    <span class="team-initials">JC</span>
+                    <span class="team-badge">Back-End</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Design & Experiência</h3>
-                <p class="m text-sm">Interfaces digitais e usabilidade</p>
+                <h3 class="font-display font-semibold text-lg mt-4">Joaquim dos Santos de Almeida Chiaca</h3>
+                <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
               <div>
                 <div class="team-photo-wrap">
                   <img
                     src="assets/images/equipa/equipa-6.jpg"
-                    alt="Consultoria & Formação"
+                    alt="Maria Zangue António"
                     onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
                   <div class="team-avatar hidden">
-                    <span class="team-initials">CS</span>
-                    <span class="team-badge">Consultoria</span>
+                    <span class="team-initials">MA</span>
+                    <span class="team-badge">Back-End</span>
                   </div>
                 </div>
-                <h3 class="font-display font-semibold text-lg mt-4">Consultoria & Formação</h3>
-                <p class="m text-sm">Capacitação e transformação digital</p>
+                <h3 class="font-display font-semibold text-lg mt-4">Maria Zangue António</h3>
+                <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
-            </div>
+              <div>
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-7.jpg"
+                    alt="Diniz Muhongo Chiquito Cabenda"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">DC</span>
+                    <span class="team-badge">Front-End</span>
+                  </div>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Diniz Muhongo Chiquito Cabenda</h3>
+                <p class="m text-sm">Desenvolvedor Front-End</p>
+              </div>
+              <div>
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-8.jpg"
+                    alt="Envaldo Haggay de Carvalho da Silva"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">ES</span>
+                    <span class="team-badge">Back-End</span>
+                  </div>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Envaldo Haggay de Carvalho da Silva</h3>
+                <p class="m text-sm">Desenvolvedor Back-End</p>
+              </div>
+          </div>
           </div>
           <div id="dots" class="mt-6 flex items-center gap-2" aria-hidden="true"></div>
         </div>
@@ -785,7 +815,6 @@
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
               <a href="mailto:geral@tunganetu.ao" class="btn b1"><i class="ic">mail</i>Enviar email</a>
-              <a href="https://wa.me/244900000000" class="btn b2"><i class="ic">chat</i>WhatsApp</a>
             </div>
           </div>
           <ul class="divide-y divide-line border-y border-line font-medium">
@@ -797,10 +826,6 @@
               <span class="ibox"><i class="ic">mail</i></span
               >geral@tunganetu.ao
             </li>
-            <li class="flex items-center gap-4 py-5">
-              <span class="ibox"><i class="ic">call</i></span
-              >+244 900 000 000
-            </li>
           </ul>
         </div>
       </section>
@@ -810,7 +835,7 @@
       <div class="wrap px-5 pt-14 pb-8">
         <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-10">
           <div>
-            <span class="font-display font-semibold text-2xl">tunganetu</span>
+            <span class="font-display font-semibold text-2xl">Tunganetu</span>
             <p class="m mt-3 max-w-xs leading-relaxed">Juntos, somos parte da transformação digital.</p>
           </div>
           <nav aria-label="Rodapé">
@@ -831,7 +856,6 @@
             <ul class="mt-4 space-y-2.5 m">
               <li>Luanda, Angola</li>
               <li><a class="hover:text-brand" href="mailto:geral@tunganetu.ao">geral@tunganetu.ao</a></li>
-              <li>+244 900 000 000</li>
             </ul>
           </div>
         </div>
