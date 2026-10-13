@@ -39,7 +39,7 @@
       </div>
     </div>-->
 
-    <header id="hd" class="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-line transition-shadow duration-300">
+    <header id="hd" class="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-line transition-shadow duration-300">
       <div class="wrap px-5 h-[72px] flex items-center justify-between">
         <a href="#inicio" class="flex items-center gap-3" aria-label="Tunganetu, início">
           <img alt="Símbolo da Tunganetu" src="Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
@@ -47,7 +47,7 @@
         </a>
         <nav class="hidden xl:flex items-center gap-8 text-[15px] font-medium" aria-label="Principal">
           <a class="nl" href="#sobre">Sobre nós</a><a class="nl" href="#servicos">Serviços</a><a class="nl" href="#marca">Marca</a
-          ><a class="nl" href="#publico">Clientes</a><a class="nl" href="#projectos">Projectos</a><a class="nl" href="#equipa">Equipa</a
+          ><a class="nl" href="#publico">Público</a><a class="nl" href="#projectos">Projectos</a><a class="nl" href="#parceiros">Clientes & Parceiros</a><a class="nl" href="#equipa">Equipa</a
           ><a class="nl" href="#faq">Dúvidas</a>
         </nav>
         <div class="flex items-center gap-3">
@@ -68,7 +68,7 @@
     </header>
 
     <!-- Overlay do menu mobile (fora do header para cobrir toda a página) -->
-    <div id="mo" class="fixed inset-0 z-40 hidden" aria-hidden="true">
+    <div id="mo" class="fixed inset-0 z-[60] hidden" aria-hidden="true">
       <!-- Backdrop semitransparente -->
       <div id="mo-bg" class="absolute inset-0 bg-navy/60 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
       <!-- Painel lateral -->
@@ -83,8 +83,9 @@
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#sobre">Sobre nós</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#servicos">Serviços</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#marca">Marca</a>
-          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#publico">Clientes</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#publico">Público-alvo</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#projectos">Projectos</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#parceiros">Clientes e Parceiros</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#equipa">Equipa</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#faq">Dúvidas</a>
           <a class="mt-6 btn b1 w-full justify-center" href="#contacto">Falar connosco</a>
@@ -92,7 +93,7 @@
       </nav>
     </div>
 
-    <main id="conteudo">
+    <main id="conteudo" class="pt-[72px]">
       <!-- INÍCIO -->
       <section id="inicio" class="sec !pt-12 md:!pt-20">
         <div class="wrap grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
@@ -330,46 +331,20 @@
       <section id="projectos" class="sec bg-tint">
         <div class="wrap">
           <h2 class="h2">Projectos</h2>
-          <p class="m mt-4 text-lg max-w-xl">Exemplos do tipo de trabalho que fazemos. Substitua pelos projectos reais.</p>
-          <div class="mt-12 grid md:grid-cols-3 gap-8 items-start">
-
-            <!-- Projecto 1: Sistema de gestão Escolar -->
-            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
-              <div class="ph"><img alt="Sistema de gestão" class="w-full aspect-[16/10]" /></div>
-              <div class="p-5 flex flex-col flex-1">
-                <p class="text-sm font-bold text-brand">Software de gestão</p>
-                <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
-                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">Plataforma para controlar matrículas, notas, frequência e facturação de uma instituição de ensino.</p>
-                <!-- Dropdown -->
-                <div class="mt-4 pt-4 border-t border-line">
-                  <button
-                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
-                    aria-expanded="false"
-                    aria-controls="proj1-details">
-                    <span>Parceiros e clientes</span>
-                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
-                  </button>
-                  <div id="proj1-details" class="proj-details hidden mt-4 space-y-4">
-                    <div>
-                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>A definir — adicione o nome real da instituição aqui</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <p class="text-xs font-bold text-muted uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>A definir — adicione os parceiros reais aqui</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <p class="m mt-4 text-lg max-w-xl text-justify-pt">
+            Soluções e produtos tecnológicos desenvolvidos pela Tunganetu para responder a desafios reais de gestão, eficiência e modernização.
+          </p>
+          <div class="mt-12 grid md:grid-cols-3 gap-8">
+            <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
+              <div class="ph rounded-xl overflow-hidden"><img alt="Sistema de gestão escolar" class="w-full aspect-[16/10] object-cover" /></div>
+              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
+              <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
+                Plataforma integrada para controlo de matrículas, gestão de notas, assiduidade, turmas e facturação para instituições de ensino.
+              </p>
             </article>
-
-            <!-- Projecto 2: Faturaja -->
-            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
-              <div class="ph bg-white border-b border-line p-4 sm:p-6">
+            <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
+              <div class="ph bg-white border border-line p-4 sm:p-6 rounded-xl overflow-hidden flex items-center justify-center">
                 <img
                   alt="Aplicação móvel Faturaja"
                   src="4.png"
@@ -377,75 +352,245 @@
                   height="500"
                   class="w-full max-h-48 object-contain aspect-square" />
               </div>
-              <div class="p-5 flex flex-col flex-1">
-                <p class="text-sm font-bold text-brand">Software de gestão</p>
-                <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
-                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
-                  Plataforma para ajudar empresas a gerir a sua actividade comercial, emitir documentos fiscais, controlar vendas, acompanhar o stock e organizar informações financeiras.
-                </p>
-                <!-- Dropdown -->
-                <div class="mt-4 pt-4 border-t border-line">
-                  <button
-                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
-                    aria-expanded="false"
-                    aria-controls="proj2-details">
-                    <span>Parceiros e clientes</span>
-                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
-                  </button>
-                  <div id="proj2-details" class="proj-details hidden mt-4 space-y-4">
-                    <div>
-                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Pequenas e médias empresas angolanas</li>
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Comerciantes e profissionais liberais</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>Tunganetu (desenvolvimento e suporte)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
+              <h3 class="font-display font-semibold text-xl mt-1">Faturaja</h3>
+              <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
+                Plataforma para ajudar empresas a gerir a sua actividade comercial, emitir documentos fiscais certificados, controlar vendas, acompanhar o stock e organizar informações financeiras.
+              </p>
             </article>
-
-            <!-- Projecto 3: Rede e segurança -->
-            <article class="proj-card bg-white rounded-2xl border border-line overflow-hidden flex flex-col">
-              <div class="ph"><img alt="Rede e segurança" class="w-full aspect-[16/10]" /></div>
-              <div class="p-5 flex flex-col flex-1">
-                <p class="text-sm font-bold text-brand">Infraestrutura</p>
-                <h3 class="font-display font-semibold text-xl mt-1">Rede e segurança</h3>
-                <p class="m mt-2 leading-relaxed text-sm text-justify-pt">Rede interna, cópias de segurança e protecção de dados para um escritório com várias filiais.</p>
-                <!-- Dropdown -->
-                <div class="mt-4 pt-4 border-t border-line">
-                  <button
-                    class="proj-toggle flex items-center justify-between w-full text-sm font-semibold text-navy gap-2"
-                    aria-expanded="false"
-                    aria-controls="proj3-details">
-                    <span>Parceiros e clientes</span>
-                    <i class="ic text-brand text-xl proj-chevron transition-transform duration-300">expand_more</i>
-                  </button>
-                  <div id="proj3-details" class="proj-details hidden mt-4 space-y-4">
-                    <div>
-                      <p class="text-xs font-bold text-brand uppercase tracking-wider mb-2">Clientes</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>A definir — adicione o nome real da organização aqui</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color:var(--muted)">Parceiros</p>
-                      <ul class="space-y-1">
-                        <li class="flex items-center gap-2 text-sm m"><span class="w-1.5 h-1.5 rounded-full bg-line shrink-0"></span>A definir — adicione os parceiros reais aqui</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+            <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
+              <div class="ph bg-white border border-line p-4 rounded-xl overflow-hidden flex items-center justify-center">
+                <img alt="SDOCA - Gestão Documental" src="SDOCA.png" width="794" height="314" class="w-full max-h-48 object-contain" />
               </div>
+              <p class="mt-5 text-sm font-bold text-brand">Gestão Documental</p>
+              <h3 class="font-display font-semibold text-xl mt-1">SDOCA</h3>
+              <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
+                Sistema avançado para gestão, arquivo seguro e tramitação electrónica de documentos e processos administrativos corporativos.
+              </p>
             </article>
-
           </div>
+        </div>
+      </section>
+
+      <!-- CLIENTES E PARCEIROS -->
+      <section id="parceiros" class="sec">
+        <div class="wrap">
+          <div class="max-w-2xl">
+            <h2 class="h2">Clientes e Parceiros</h2>
+            <p class="m mt-4 text-lg leading-relaxed text-justify-pt">
+              Acreditamos na força da colaboração estratégica. Trabalhamos lado a lado com organizações de referência e clientes de diversos sectores para construir soluções tecnológicas sólidas, sustentáveis e com impacto duradouro.
+            </p>
+          </div>
+
+          <!-- ÁREA 1: CLIENTES -->
+          <div class="mt-14">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-brand">Confiança & Resultados</span>
+                <h3 class="font-display font-semibold text-2xl mt-0.5">Clientes</h3>
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  id="cli-prev"
+                  type="button"
+                  class="w-10 h-10 rounded-full border border-line bg-white hover:bg-tint hover:border-brand/40 flex items-center justify-center text-navy transition shadow-sm"
+                  aria-label="Ver clientes anteriores">
+                  <i class="ic text-xl">arrow_back</i>
+                </button>
+                <button
+                  id="cli-next"
+                  type="button"
+                  class="w-10 h-10 rounded-full border border-line bg-white hover:bg-tint hover:border-brand/40 flex items-center justify-center text-navy transition shadow-sm"
+                  aria-label="Ver próximos clientes">
+                  <i class="ic text-xl">arrow_forward</i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Carrossel de Clientes -->
+            <div
+              id="cli-track"
+              class="flex gap-5 overflow-x-auto no-scrollbar scroll-smooth py-2"
+              style="scroll-snap-type: x mandatory"
+              tabindex="0"
+              aria-label="Carrossel de clientes">
+
+              <!-- Cliente 1 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <!-- Espaço reservado para logótipo real: <img src="logo.png" alt="Instituições de Ensino" class="max-h-12 w-auto object-contain" /> -->
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">school</i></span>
+                    <span>Inst. de Ensino</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-brand uppercase tracking-wider">Educação</p>
+                  <p class="text-sm font-medium text-navy mt-1">Instituições de Ensino</p>
+                  <p class="text-xs m mt-1">Gestão académica e escolar integrada</p>
+                </div>
+              </div>
+
+              <!-- Cliente 2 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">storefront</i></span>
+                    <span>Comércio & PMEs</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-brand uppercase tracking-wider">Sector Comercial</p>
+                  <p class="text-sm font-medium text-navy mt-1">Pequenas e Médias Empresas</p>
+                  <p class="text-xs m mt-1">Facturação electrónica certificada com Faturaja</p>
+                </div>
+              </div>
+
+              <!-- Cliente 3 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">account_balance</i></span>
+                    <span>Sector Público</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-brand uppercase tracking-wider">Governo & Estado</p>
+                  <p class="text-sm font-medium text-navy mt-1">Instituições Públicas</p>
+                  <p class="text-xs m mt-1">Modernização digital e tramitação electrónica</p>
+                </div>
+              </div>
+
+              <!-- Cliente 4 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">business</i></span>
+                    <span>Empresas Privadas</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-brand uppercase tracking-wider">Corporativo</p>
+                  <p class="text-sm font-medium text-navy mt-1">Sociedades & Empresas</p>
+                  <p class="text-xs m mt-1">Infraestrutura, redes e consultoria técnica</p>
+                </div>
+              </div>
+
+              <!-- Cliente 5 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">payments</i></span>
+                    <span>Serviços Financeiros</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-brand uppercase tracking-wider">Finanças</p>
+                  <p class="text-sm font-medium text-navy mt-1">Microfinanças & Seguros</p>
+                  <p class="text-xs m mt-1">Sistemas de controlo e auditoria digital</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ÁREA 2: PARCEIROS ESTRATÉGICOS -->
+          <div class="mt-14 pt-10 border-t border-line">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-muted" style="color:var(--muted)">Ecossistema & Cooperação</span>
+                <h3 class="font-display font-semibold text-2xl mt-0.5">Parceiros Estratégicos</h3>
+              </div>
+              <div class="flex items-center gap-2">
+                <button
+                  id="par-prev"
+                  type="button"
+                  class="w-10 h-10 rounded-full border border-line bg-white hover:bg-tint hover:border-brand/40 flex items-center justify-center text-navy transition shadow-sm"
+                  aria-label="Ver parceiros anteriores">
+                  <i class="ic text-xl">arrow_back</i>
+                </button>
+                <button
+                  id="par-next"
+                  type="button"
+                  class="w-10 h-10 rounded-full border border-line bg-white hover:bg-tint hover:border-brand/40 flex items-center justify-center text-navy transition shadow-sm"
+                  aria-label="Ver próximos parceiros">
+                  <i class="ic text-xl">arrow_forward</i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Carrossel de Parceiros -->
+            <div
+              id="par-track"
+              class="flex gap-5 overflow-x-auto no-scrollbar scroll-smooth py-2"
+              style="scroll-snap-type: x mandatory"
+              tabindex="0"
+              aria-label="Carrossel de parceiros estratégicos">
+
+              <!-- Parceiro 1 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <!-- Espaço reservado para logótipo real: <img src="logo.png" alt="Cloud & Infra" class="max-h-12 w-auto object-contain" /> -->
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">cloud</i></span>
+                    <span>Cloud & Infra</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-muted uppercase tracking-wider" style="color:var(--muted)">Infraestrutura</p>
+                  <p class="text-sm font-medium text-navy mt-1">Fornecedores Cloud</p>
+                  <p class="text-xs m mt-1">Servidores de alta disponibilidade e protecção</p>
+                </div>
+              </div>
+
+              <!-- Parceiro 2 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">security</i></span>
+                    <span>Cibersegurança</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-muted uppercase tracking-wider" style="color:var(--muted)">Segurança Digital</p>
+                  <p class="text-sm font-medium text-navy mt-1">Especialistas em Cibersegurança</p>
+                  <p class="text-xs m mt-1">Auditorias, cópias de segurança e conformidade</p>
+                </div>
+              </div>
+
+              <!-- Parceiro 3 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">receipt_long</i></span>
+                    <span>Conformidade Fiscal</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-muted uppercase tracking-wider" style="color:var(--muted)">Facturação Legal</p>
+                  <p class="text-sm font-medium text-navy mt-1">Alinhamento Regulatório</p>
+                  <p class="text-xs m mt-1">Conformidade com normativos da AGT Angola</p>
+                </div>
+              </div>
+
+              <!-- Parceiro 4 -->
+              <div class="carousel-card bg-white border border-line rounded-xl p-6 flex flex-col justify-between shrink-0 shadow-xs">
+                <div class="h-16 flex items-center justify-center border-b border-line/60 pb-3">
+                  <div class="flex items-center gap-2.5 font-display font-semibold text-lg text-navy">
+                    <span class="w-9 h-9 rounded-lg bg-tint text-brand grid place-items-center"><i class="ic text-xl">hub</i></span>
+                    <span>Telecomunicações</span>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-xs font-bold text-muted uppercase tracking-wider" style="color:var(--muted)">Conectividade</p>
+                  <p class="text-sm font-medium text-navy mt-1">Operadores de Rede</p>
+                  <p class="text-xs m mt-1">Redes corporativas e interligação de filiais</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -730,28 +875,65 @@
         document.getElementById("next").onclick = next;
         document.getElementById("prev").onclick = prev;
 
-        // ── Dropdowns de projectos ──
-        document.querySelectorAll(".proj-toggle").forEach(function(btn) {
-          btn.addEventListener("click", function() {
-            var targetId = btn.getAttribute("aria-controls");
-            var details = document.getElementById(targetId);
-            var chevron = btn.querySelector(".proj-chevron");
-            var isOpen = btn.getAttribute("aria-expanded") === "true";
-            if (isOpen) {
-              btn.setAttribute("aria-expanded", "false");
-              chevron.style.transform = "rotate(0deg)";
-              details.classList.add("hidden");
+        // ── Carrosséis independentes (Clientes e Parceiros) ──
+        function initCarousel(trackId, prevBtnId, nextBtnId) {
+          var track = document.getElementById(trackId);
+          var prevBtn = document.getElementById(prevBtnId);
+          var nextBtn = document.getElementById(nextBtnId);
+          if (!track || !prevBtn || !nextBtn) return;
+
+          function getCardStep() {
+            var firstCard = track.querySelector(".carousel-card");
+            if (!firstCard) return 260;
+            return firstCard.offsetWidth + 20; // card + gap
+          }
+
+          function scrollNext() {
+            var step = getCardStep();
+            if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+              track.scrollTo({ left: 0, behavior: reduce ? "auto" : "smooth" });
             } else {
-              btn.setAttribute("aria-expanded", "true");
-              chevron.style.transform = "rotate(180deg)";
-              details.classList.remove("hidden");
+              track.scrollBy({ left: step, behavior: reduce ? "auto" : "smooth" });
             }
+          }
+
+          function scrollPrev() {
+            var step = getCardStep();
+            if (track.scrollLeft <= 10) {
+              track.scrollTo({ left: track.scrollWidth, behavior: reduce ? "auto" : "smooth" });
+            } else {
+              track.scrollBy({ left: -step, behavior: reduce ? "auto" : "smooth" });
+            }
+          }
+
+          nextBtn.addEventListener("click", scrollNext);
+          prevBtn.addEventListener("click", scrollPrev);
+
+          // Navegação por teclado ao focar no track
+          track.addEventListener("keydown", function(e) {
+            if (e.key === "ArrowRight") { e.preventDefault(); scrollNext(); }
+            else if (e.key === "ArrowLeft") { e.preventDefault(); scrollPrev(); }
           });
-          // suporte a teclado: Enter e Espaço
-          btn.addEventListener("keydown", function(e) {
-            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); btn.click(); }
-          });
-        });
+
+          // Autoplay moderado (pausa em hover, foco e toque)
+          if (!reduce) {
+            var autoInterval = setInterval(scrollNext, 5000);
+            function pause() { clearInterval(autoInterval); }
+            function resume() {
+              clearInterval(autoInterval);
+              autoInterval = setInterval(scrollNext, 5000);
+            }
+            track.addEventListener("mouseenter", pause);
+            track.addEventListener("mouseleave", resume);
+            track.addEventListener("focusin", pause);
+            track.addEventListener("focusout", resume);
+            track.addEventListener("touchstart", pause, { passive: true });
+            track.addEventListener("touchend", resume, { passive: true });
+          }
+        }
+
+        initCarousel("cli-track", "cli-prev", "cli-next");
+        initCarousel("par-track", "par-prev", "par-next");
 
         // ── Sombra do header ao fazer scroll ──
         var hdEl = document.getElementById("hd");
