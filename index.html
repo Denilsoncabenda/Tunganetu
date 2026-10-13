@@ -13,6 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=block"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Tunganetu_4.png" />
+    <meta name="description" content="Tunganetu - Consultoria e soluções tecnológicas em Angola. Desenvolvimento de software, infraestrutura de redes, cloud, cibersegurança e transformação digital sustentável." />
+    <!-- Open Graph / Partilha em Redes Sociais e WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tunganetu | Juntos, somos parte da transformação digital" />
+    <meta property="og:description" content="Criamos tecnologia, conhecimento e soluções que aproximam pessoas, fortalecem organizações e aceleram a transformação digital em Angola." />
+    <meta property="og:image" content="Tunganetu_1.png" />
+    <meta property="og:locale" content="pt_AO" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tunganetu | Transformação Digital" />
+    <meta name="twitter:description" content="Tecnologia e inovação para empresas e instituições em Angola." />
+    <meta name="twitter:image" content="Tunganetu_1.png" />
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <script>
       tailwind.config = {
@@ -45,10 +58,15 @@
           <img alt="Símbolo da Tunganetu" src="Tunganetu_4.png" width="233" height="175" class="h-10 w-auto object-contain rounded-md" />
           <span class="font-display font-semibold text-2xl tracking-tight">Tunganetu</span>
         </a>
-        <nav class="hidden xl:flex items-center gap-8 text-[15px] font-medium" aria-label="Principal">
-          <a class="nl" href="#sobre">Sobre nós</a><a class="nl" href="#servicos">Serviços</a><a class="nl" href="#marca">Marca</a
-          ><a class="nl" href="#publico">Público</a><a class="nl" href="#projectos">Projectos</a><a class="nl" href="#parceiros">Clientes & Parceiros</a><a class="nl" href="#equipa">Equipa</a
-          ><a class="nl" href="#faq">Dúvidas</a>
+        <nav class="hidden xl:flex items-center gap-7 text-[15px] font-medium" aria-label="Principal">
+          <a class="nl" href="#sobre">Sobre nós</a>
+          <a class="nl" href="#proposito-missao-visao">Missão & Visão</a>
+          <a class="nl" href="#servicos">Serviços</a>
+          <a class="nl" href="#publico">Público-alvo</a>
+          <a class="nl" href="#projectos">Projectos</a>
+          <a class="nl" href="#parceiros">Clientes & Parceiros</a>
+          <a class="nl" href="#equipa">Equipa</a>
+          <a class="nl" href="#faq">Dúvidas</a>
         </nav>
         <div class="flex items-center gap-3">
           <a href="#contacto" class="btn b1 !py-2.5 hidden sm:inline-flex">Falar connosco</a>
@@ -81,8 +99,8 @@
         </div>
         <div class="flex-1 overflow-y-auto px-6 py-4 font-medium text-[15px]">
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#sobre">Sobre nós</a>
+          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#proposito-missao-visao">Missão & Visão</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#servicos">Serviços</a>
-          <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#marca">Marca</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#publico">Público-alvo</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#projectos">Projectos</a>
           <a class="flex items-center gap-2 py-3.5 border-b border-line/60" href="#parceiros">Clientes e Parceiros</a>
@@ -150,90 +168,6 @@
         </div>
       </section>
 
-      <!-- SERVIÇOS -->
-      <section id="servicos" class="sec bg-tint">
-        <div class="wrap">
-          <div class="grid md:grid-cols-2 gap-6 md:gap-16 items-end">
-            <h2 class="h2">Serviços para organizações que querem avançar</h2>
-            <p class="m text-lg leading-relaxed text-justify-pt">
-              Do diagnóstico ao suporte diário, cobrimos o que a sua organização precisa para trabalhar melhor com tecnologia.
-            </p>
-          </div>
-          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line rounded-xl overflow-hidden">
-            <div class="svc">
-              <span class="ibox"><i class="ic">code</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Desenvolvimento de software</h3>
-              <p class="m mt-2 leading-relaxed">
-                Sistemas de gestão, plataformas internas e aplicações móveis feitas à medida do seu processo.
-              </p>
-            </div>
-            <div class="svc">
-              <span class="ibox"><i class="ic">language</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Websites e lojas online</h3>
-              <p class="m mt-2 leading-relaxed">Páginas rápidas, claras no telemóvel e prontas para receber pedidos e pagamentos.</p>
-            </div>
-            <div class="svc">
-              <span class="ibox"><i class="ic">lan</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Redes e infraestrutura</h3>
-              <p class="m mt-2 leading-relaxed">Instalação, configuração e manutenção de redes, servidores e equipamentos.</p>
-            </div>
-            <div class="svc">
-              <span class="ibox"><i class="ic">cloud</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Cloud</h3>
-              <p class="m mt-2 leading-relaxed">Migração para a nuvem e cópias de segurança, com os seus dados sempre acessíveis.</p>
-            </div>
-            <div class="svc">
-              <span class="ibox"><i class="ic">shield</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Cibersegurança</h3>
-              <p class="m mt-2 leading-relaxed">Protecção dos seus sistemas e dados contra falhas, perdas e acessos indevidos.</p>
-            </div>
-            <div class="svc">
-              <span class="ibox"><i class="ic">school</i></span>
-              <h3 class="font-display font-semibold text-xl mt-5">Consultoria e formação</h3>
-              <p class="m mt-2 leading-relaxed">Planeamos consigo a transformação digital e preparamos as suas equipas para a usar.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- MARCA -->
-      <section id="marca" class="sec">
-        <div class="wrap">
-          <h2 class="h2">Significado da marca</h2>
-          <p class="mt-4 font-display text-xl md:text-2xl font-medium max-w-2xl leading-snug">
-            Tunganetu não é apenas um nome; é uma filosofia.
-          </p>
-          <p class="m mt-8 text-lg">É o compromisso de:</p>
-          <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-5 border-t-2 border-navy">
-            <li class="py-6 lg:pr-6">
-              <p class="font-display font-semibold text-xl leading-snug">Crescer em conjunto com os clientes</p>
-            </li>
-            <li class="py-6 lg:px-6 lg:border-l border-line">
-              <p class="font-display font-semibold text-xl leading-snug">Construir relações de confiança</p>
-            </li>
-            <li class="py-6 lg:px-6 lg:border-l border-line">
-              <p class="font-display font-semibold text-xl leading-snug">Desenvolver soluções com impacto</p>
-            </li>
-            <li class="py-6 lg:px-6 lg:border-l border-line">
-              <p class="font-display font-semibold text-xl leading-snug">Promover a inovação colaborativa</p>
-            </li>
-            <li class="py-6 lg:pl-6 lg:border-l border-line">
-              <p class="font-display font-semibold text-xl leading-snug">Impulsionar a transformação digital</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- POSICIONAMENTO -->
-      <section class="sec bg-tint !py-14 md:!py-20">
-        <div class="wrap grid md:grid-cols-[1fr_2.2fr] gap-6 md:gap-16 items-start">
-          <h3 class="h2 !text-3xl">Posicionamento</h3>
-          <p class="font-display text-xl md:text-[1.6rem] font-medium leading-snug text-justify-pt">
-            Acreditamos que o avanço tecnológico em Angola se constrói com colaboração, proximidade e rigor técnico. Desenvolvemos soluções adaptadas à realidade de cada cliente, garantindo eficiência, sustentabilidade e inovação prática.
-          </p>
-        </div>
-      </section>
-
       <!-- PROPÓSITO, MISSÃO E VISÃO -->
       <section id="proposito-missao-visao" class="sec">
         <div class="wrap">
@@ -276,6 +210,90 @@
                 </p>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARCA -->
+      <section id="marca" class="sec">
+        <div class="wrap">
+          <h2 class="h2">Significado da marca</h2>
+          <p class="mt-4 font-display text-xl md:text-2xl font-medium max-w-2xl leading-snug">
+            Tunganetu não é apenas um nome; é uma filosofia.
+          </p>
+          <p class="m mt-8 text-lg">É o compromisso de:</p>
+          <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-5 border-t-2 border-navy">
+            <li class="py-6 lg:pr-6">
+              <p class="font-display font-semibold text-xl leading-snug">Crescer em conjunto com os clientes</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Construir relações de confiança</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Desenvolver soluções com impacto</p>
+            </li>
+            <li class="py-6 lg:px-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Promover a inovação colaborativa</p>
+            </li>
+            <li class="py-6 lg:pl-6 lg:border-l border-line">
+              <p class="font-display font-semibold text-xl leading-snug">Impulsionar a transformação digital</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- POSICIONAMENTO -->
+      <section class="sec bg-tint !py-14 md:!py-20">
+        <div class="wrap grid md:grid-cols-[1fr_2.2fr] gap-6 md:gap-16 items-start">
+          <h2 class="h2 !text-3xl">Posicionamento</h2>
+          <p class="font-display text-xl md:text-[1.6rem] font-medium leading-snug text-justify-pt">
+            Acreditamos que o avanço tecnológico em Angola se constrói com colaboração, proximidade e rigor técnico. Desenvolvemos soluções adaptadas à realidade de cada cliente, garantindo eficiência, sustentabilidade e inovação prática.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos" class="sec bg-tint">
+        <div class="wrap">
+          <div class="grid md:grid-cols-2 gap-6 md:gap-16 items-end">
+            <h2 class="h2">Serviços para organizações que querem avançar</h2>
+            <p class="m text-lg leading-relaxed text-justify-pt">
+              Do diagnóstico ao suporte diário, cobrimos o que a sua organização precisa para trabalhar melhor com tecnologia.
+            </p>
+          </div>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line rounded-xl overflow-hidden">
+            <div class="svc">
+              <span class="ibox"><i class="ic">code</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Desenvolvimento de software</h3>
+              <p class="m mt-2 leading-relaxed">
+                Sistemas de gestão, plataformas internas e aplicações móveis feitas à medida do seu processo.
+              </p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">language</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Websites e lojas online</h3>
+              <p class="m mt-2 leading-relaxed">Páginas rápidas, claras no telemóvel e prontas para receber pedidos e pagamentos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">lan</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Redes e infraestrutura</h3>
+              <p class="m mt-2 leading-relaxed">Instalação, configuração e manutenção de redes, servidores e equipamentos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">cloud</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Cloud</h3>
+              <p class="m mt-2 leading-relaxed">Migração para a nuvem e cópias de segurança, com os seus dados sempre acessíveis.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">shield</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Cibersegurança</h3>
+              <p class="m mt-2 leading-relaxed">Protecção dos seus sistemas e dados contra falhas, perdas e acessos indevidos.</p>
+            </div>
+            <div class="svc">
+              <span class="ibox"><i class="ic">school</i></span>
+              <h3 class="font-display font-semibold text-xl mt-5">Consultoria e formação</h3>
+              <p class="m mt-2 leading-relaxed">Planeamos consigo a transformação digital e preparamos as suas equipas para a usar.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -333,7 +351,15 @@
           </p>
           <div class="mt-12 grid md:grid-cols-3 gap-8">
             <article class="bg-white rounded-2xl border border-line p-5 flex flex-col transition hover:shadow-lg">
-              <div class="ph rounded-xl overflow-hidden"><img alt="Sistema de gestão escolar" class="w-full aspect-[16/10] object-cover" /></div>
+              <div class="ph rounded-xl overflow-hidden bg-tint border border-line flex items-center justify-center aspect-[16/10] p-6">
+                <div class="flex flex-col items-center justify-center text-center">
+                  <div class="w-14 h-14 rounded-2xl bg-white border border-line shadow-xs flex items-center justify-center text-brand mb-3">
+                    <i class="ic text-3xl">school</i>
+                  </div>
+                  <span class="font-display font-bold text-navy text-base">Portal Escolar</span>
+                  <span class="text-xs text-muted mt-0.5" style="color:var(--muted)">Gestão Académica & Facturação</span>
+                </div>
+              </div>
               <p class="mt-5 text-sm font-bold text-brand">Software de gestão</p>
               <h3 class="font-display font-semibold text-xl mt-1">Sistema de gestão Escolar</h3>
               <p class="m mt-2 leading-relaxed text-sm text-justify-pt">
@@ -619,34 +645,52 @@
               aria-label="Equipa"
               class="mt-10 flex gap-5 overflow-x-auto snap-x snap-mandatory no-scrollbar">
               <div>
-                <img alt="Fotografia do director geral" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Director geral</p>
+                <div class="team-avatar">
+                  <span class="team-initials">DG</span>
+                  <span class="team-badge">Direcção</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Direcção Geral</h3>
+                <p class="m text-sm">Gestão executiva e estratégica</p>
               </div>
               <div>
-                <img alt="Fotografia do responsável de desenvolvimento" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Desenvolvimento</p>
+                <div class="team-avatar">
+                  <span class="team-initials">DEV</span>
+                  <span class="team-badge">Software</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Engenharia de Software</h3>
+                <p class="m text-sm">Desenvolvimento e arquitetura</p>
               </div>
               <div>
-                <img alt="Fotografia do responsável de infraestrutura" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Infraestrutura e redes</p>
+                <div class="team-avatar">
+                  <span class="team-initials">INF</span>
+                  <span class="team-badge">Sistemas</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Redes & Infraestrutura</h3>
+                <p class="m text-sm">Servidores, segurança e cloud</p>
               </div>
               <div>
-                <img alt="Fotografia do apoio ao cliente" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Apoio ao cliente</p>
+                <div class="team-avatar">
+                  <span class="team-initials">SUP</span>
+                  <span class="team-badge">Suporte</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Apoio ao Cliente</h3>
+                <p class="m text-sm">Atendimento técnico e manutenção</p>
               </div>
               <div>
-                <img alt="Fotografia do designer" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Design e interface</p>
+                <div class="team-avatar">
+                  <span class="team-initials">UI</span>
+                  <span class="team-badge">Design</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Design & Experiência</h3>
+                <p class="m text-sm">Interfaces digitais e usabilidade</p>
               </div>
               <div>
-                <img alt="Fotografia do consultor" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Nome Apelido</h3>
-                <p class="m text-sm">Consultoria e formação</p>
+                <div class="team-avatar">
+                  <span class="team-initials">CS</span>
+                  <span class="team-badge">Consultoria</span>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Consultoria & Formação</h3>
+                <p class="m text-sm">Capacitação e transformação digital</p>
               </div>
             </div>
           </div>
@@ -735,11 +779,14 @@
           </div>
           <nav aria-label="Rodapé">
             <h3 class="font-display font-semibold">Navegação</h3>
-            <ul class="mt-4 space-y-2.5 m">
+            <ul class="mt-4 space-y-2.5 m text-sm">
               <li><a class="hover:text-brand" href="#sobre">Sobre nós</a></li>
+              <li><a class="hover:text-brand" href="#proposito-missao-visao">Missão & Visão</a></li>
               <li><a class="hover:text-brand" href="#servicos">Serviços</a></li>
-              <li><a class="hover:text-brand" href="#publico">Clientes</a></li>
+              <li><a class="hover:text-brand" href="#publico">Público-alvo</a></li>
               <li><a class="hover:text-brand" href="#projectos">Projectos</a></li>
+              <li><a class="hover:text-brand" href="#parceiros">Clientes e Parceiros</a></li>
+              <li><a class="hover:text-brand" href="#equipa">Equipa</a></li>
               <li><a class="hover:text-brand" href="#faq">Perguntas frequentes</a></li>
             </ul>
           </nav>
