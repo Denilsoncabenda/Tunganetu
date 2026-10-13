@@ -42,6 +42,15 @@
   <body class="font-sans antialiased">
     <a href="#conteudo" class="skip">Saltar para o conteúdo</a>
 
+    <!-- <div class="hidden md:block bg-tint border-b border-line text-sm">
+      <div class="wrap px-5 h-10 flex items-center justify-between m">
+        <span class="flex items-center gap-1.5"><i class="ic text-base text-brand">location_on</i>Luanda, Angola</span>
+        <span class="flex items-center gap-6"
+          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">mail</i>geral@tunganetu.ao</span
+          ><span class="flex items-center gap-1.5"><i class="ic text-base text-brand">call</i>+244 900 000 000</span></span
+        >
+      </div>
+    </div>-->
 
     <header id="hd" class="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-line transition-shadow duration-300">
       <div class="wrap px-5 h-[72px] flex items-center justify-between">
@@ -483,9 +492,6 @@
                 <p class="text-sm font-semibold text-navy mt-4">...</p>
               </div>
 
-
-
-
             </div>
           </div>
 
@@ -615,42 +621,114 @@
               aria-label="Equipa"
               class="mt-10 flex gap-5 overflow-x-auto snap-x snap-mandatory no-scrollbar">
               <div>
-                <img alt="Fotografia de Eng. Joaquim Marcial Mbango" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-1.jpg"
+                    alt="Eng. Joaquim Marcial Mbango"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">JM</span>
+                    <span class="team-badge">Direcção</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Eng. Joaquim Marcial Mbango</h3>
                 <p class="m text-sm">Gestão executiva e estratégica</p>
               </div>
               <div>
-                <img alt="Fotografia de Stelvio de Jesus Arsenio Marques" class="w-full aspect-[4/5] object-cover" />
-                <h3 class="font-display font-semibold text-lg mt-4">Stelvio de Jesus Arsenio Marques</h3>
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-2.jpg"
+                    alt="Stelvio de Jesus Arsenio Marques"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">SM</span>
+                    <span class="team-badge">Full-Stack</span>
+                  </div>
+                </div>
+                <h3 class="font-display font-semibold text-lg mt-4">Stelvio Marques</h3>
                 <p class="m text-sm">Desenvolvedor Full-Stack</p>
               </div>
               <div>
-                <img alt="Fotografia de Paulina Fernando Capitão" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-3.jpg"
+                    alt="Paulina Fernando Capitão"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">PC</span>
+                    <span class="team-badge">Full-Stack</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Paulina Fernando Capitão</h3>
                 <p class="m text-sm">Desenvolvedora Full-Stack</p>
               </div>
               <div>
-                <img alt="Fotografia de Isidro Manuel" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-4.jpg"
+                    alt="Isidro Manuel"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">IM</span>
+                    <span class="team-badge">Back-End</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Isidro Manuel</h3>
                 <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
               <div>
-                <img alt="Fotografia de Joaquim dos Santos de Almeida Chiaca" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-5.jpg"
+                    alt="Joaquim dos Santos de Almeida Chiaca"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">JC</span>
+                    <span class="team-badge">Back-End</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Joaquim dos Santos de Almeida Chiaca</h3>
                 <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
               <div>
-                <img alt="Fotografia de Maria Zangue António" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-6.jpg"
+                    alt="Maria Zangue António"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">MA</span>
+                    <span class="team-badge">Back-End</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Maria Zangue António</h3>
                 <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
               <div>
-                <img alt="Fotografia de Diniz Muhongo Chiquito Cabenda" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-7.jpg"
+                    alt="Diniz Muhongo Chiquito Cabenda"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">DC</span>
+                    <span class="team-badge">Front-End</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Diniz Muhongo Chiquito Cabenda</h3>
                 <p class="m text-sm">Desenvolvedor Front-End</p>
               </div>
               <div>
-                <img alt="Fotografia de Envaldo Haggay de Carvalho da Silva" class="w-full aspect-[4/5] object-cover" />
+                <div class="team-photo-wrap">
+                  <img
+                    src="assets/images/equipa/equipa-8.jpg"
+                    alt="Envaldo Haggay de Carvalho da Silva"
+                    onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                  <div class="team-avatar hidden">
+                    <span class="team-initials">ES</span>
+                    <span class="team-badge">Back-End</span>
+                  </div>
+                </div>
                 <h3 class="font-display font-semibold text-lg mt-4">Envaldo Haggay de Carvalho da Silva</h3>
                 <p class="m text-sm">Desenvolvedor Back-End</p>
               </div>
@@ -828,7 +906,8 @@
         }
         var tr = document.getElementById("track"),
           cards = [].slice.call(tr.children),
-          dots = document.getElementById("dots");
+          dots = document.getElementById("dots"),
+          timer;
         cards.forEach(function (c, i) {
           var b = document.createElement("button");
           b.type = "button";
