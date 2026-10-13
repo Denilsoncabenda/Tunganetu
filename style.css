@@ -383,10 +383,31 @@
         }
       }
 
-      /* ── Avatares profissionais para equipa ── */
+      /* ── Espaço preparado para fotos da equipa com fallback para avatar ── */
+      .team-photo-wrap {
+        position: relative;
+        aspect-ratio: 4/5;
+        width: 100%;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        background: var(--tint);
+        border: 1px solid var(--line);
+      }
+      .team-photo-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.75rem;
+        transition: transform 0.4s ease;
+        display: block;
+      }
+      .team-photo-wrap:hover img {
+        transform: scale(1.04);
+      }
       .team-avatar {
         aspect-ratio: 4/5;
         width: 100%;
+        height: 100%;
         border-radius: 0.75rem;
         background: linear-gradient(135deg, var(--tint) 0%, #e3eafc 100%);
         border: 1px solid var(--line);
